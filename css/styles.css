@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 10px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.main-container{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "left-container center-container right-container"
+    "left-container center-container right-container"
+    "left-container center-container right-container";
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -webkit-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -moz-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+}
+
+.left-container{
+    background-color:whitesmoke;
+    grid-area: left-container;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    border-radius: 13px 0px 0px 13px;
+    border-right: 1px solid gray;
+}
+
+.left-image{
+    height: 50px;
+    width: 50px;
+}
+
+.left-image:hover{
+    background-color: tomato;
+}
+
+.center-container{
+    background-color:whitesmoke;
+    grid-area: center-container;
+}
+
+.loan-containers{
+    display: flex;
+    justify-content:space-around;
+    margin: 5%;
+}
+
+.loan-container{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -webkit-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -moz-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+}
+
+.loan-container >img{
+    height: 45px;
+    width: 45px;
+}
+
+.title-container{
+    align-items: center;
+}
+
+button{
+    margin-left: 25%;
+    background-color: darksalmon;
+    color: white;
+    height: 40px;
+    width: 155px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -webkit-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -moz-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+}
+
+button:hover{
+    background-color: tomato;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-container{
+    grid-area: right-container;
+    background-color: rgb(248, 209, 204);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 13px 13px 0px;
+}
+
+.right-container > img{
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -webkit-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+    -moz-box-shadow: 1px 1px 5px 7px rgba(174,162,162,0.58);
+}
